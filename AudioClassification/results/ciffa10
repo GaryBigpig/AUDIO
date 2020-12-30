@@ -1,0 +1,83 @@
+/home/fenggang/anaconda3/envs/pytorch1.2.0_torchvision0.4.0_CUDA10.0/bin/python "/home/fenggang/Desktop/Projects/Audio Classification/main.py"
+Sequential(
+  (0): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (1): Sequential(
+    (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (2): Sequential(
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+    (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace=True)
+    (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (3): Sequential(
+    (0): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+    (2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace=True)
+    (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (4): Sequential(
+    (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+    (2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace=True)
+    (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+Files already downloaded and verified
+Files already downloaded and verified
+processing epoch # 0...
+/home/fenggang/Desktop/Projects/Audio Classification/utils.py:60: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  im = Variable(im.cuda(), volatile=True)
+/home/fenggang/Desktop/Projects/Audio Classification/utils.py:61: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  label = Variable(label.cuda(), volatile=True)
+Epoch 0. Train Loss: 2.303114, Train Acc: 0.099305, Valid Loss: 2.302817, Valid Acc: 0.099585, Time 00:00:45
+processing epoch # 1...
+Epoch 1. Train Loss: 2.303046, Train Acc: 0.099804, Valid Loss: 2.302975, Valid Acc: 0.098892, Time 00:00:48
+processing epoch # 2...
+Epoch 2. Train Loss: 2.302846, Train Acc: 0.099365, Valid Loss: 2.303051, Valid Acc: 0.100969, Time 00:00:51
+processing epoch # 3...
+Epoch 3. Train Loss: 2.240366, Train Acc: 0.140245, Valid Loss: 2.102808, Valid Acc: 0.168216, Time 00:00:51
+processing epoch # 4...
+Epoch 4. Train Loss: 1.909501, Train Acc: 0.256374, Valid Loss: 2.257564, Valid Acc: 0.224684, Time 00:00:51
+processing epoch # 5...
+Epoch 5. Train Loss: 1.678791, Train Acc: 0.351103, Valid Loss: 2.014104, Valid Acc: 0.286491, Time 00:00:51
+processing epoch # 6...
+Epoch 6. Train Loss: 1.486153, Train Acc: 0.439138, Valid Loss: 1.572566, Valid Acc: 0.423556, Time 00:00:51
+processing epoch # 7...
+Epoch 7. Train Loss: 1.260959, Train Acc: 0.542259, Valid Loss: 1.390378, Valid Acc: 0.505241, Time 00:00:51
+processing epoch # 8...
+Epoch 8. Train Loss: 1.051873, Train Acc: 0.624820, Valid Loss: 1.445182, Valid Acc: 0.518295, Time 00:00:51
+processing epoch # 9...
+Epoch 9. Train Loss: 0.874584, Train Acc: 0.691476, Valid Loss: 1.203086, Valid Acc: 0.612441, Time 00:00:51
+processing epoch # 10...
+Epoch 10. Train Loss: 0.723748, Train Acc: 0.747183, Valid Loss: 0.956623, Valid Acc: 0.683940, Time 00:00:51
+processing epoch # 11...
+Epoch 11. Train Loss: 0.601443, Train Acc: 0.791600, Valid Loss: 0.834164, Valid Acc: 0.728540, Time 00:00:51
+processing epoch # 12...
+Epoch 12. Train Loss: 0.491878, Train Acc: 0.829664, Valid Loss: 1.444546, Valid Acc: 0.618770, Time 00:00:51
+processing epoch # 13...
+Epoch 13. Train Loss: 0.402536, Train Acc: 0.860334, Valid Loss: 0.998789, Valid Acc: 0.708861, Time 00:00:51
+processing epoch # 14...
+Epoch 14. Train Loss: 0.314443, Train Acc: 0.890805, Valid Loss: 0.873947, Valid Acc: 0.741693, Time 00:00:51
+processing epoch # 15...
+Epoch 15. Train Loss: 0.243228, Train Acc: 0.915141, Valid Loss: 0.862828, Valid Acc: 0.772053, Time 00:00:51
+processing epoch # 16...
+Epoch 16. Train Loss: 0.196314, Train Acc: 0.931226, Valid Loss: 1.048986, Valid Acc: 0.733188, Time 00:00:51
+processing epoch # 17...
+Epoch 17. Train Loss: 0.153920, Train Acc: 0.947091, Valid Loss: 0.947503, Valid Acc: 0.765229, Time 00:00:51
+processing epoch # 18...
+Epoch 18. Train Loss: 0.123479, Train Acc: 0.958280, Valid Loss: 0.952125, Valid Acc: 0.774624, Time 00:00:51
+processing epoch # 19...
+Epoch 19. Train Loss: 0.094147, Train Acc: 0.967671, Valid Loss: 1.950232, Valid Acc: 0.688983, Time 00:00:51
+
+Process finished with exit code 0
+
